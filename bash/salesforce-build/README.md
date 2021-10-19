@@ -2,7 +2,8 @@
 
 ## Sumary
 * [Purpose](#purpose)
-* [Scripts](#scripts)
+* [Usage](#usage)
+* [Files](#files)
 * [Contribution](#Contribution)
 
 ## Purpose
@@ -13,7 +14,7 @@ Generate build "package" from a list of commits in git log.
 2. Run `bash build.sh`;
 3. Build script will create "unpackaged" folder with a new SFDX project structure with commited files inside it.
 
-Usage of files: 
+Files managed: 
 1. commit.txt: Hash that could be your baseline;
 2. commitedfiles.txt: List of updated files inside each hash listed in 'commitlist.txt';
 3. commitlist.txt: list of commit existed in log repo since hash baseline.
