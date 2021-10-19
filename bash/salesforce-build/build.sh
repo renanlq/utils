@@ -1,7 +1,7 @@
 #!/bin/bash
 branch="master"
 
-echo $(date '+%Y-%m-%d %H:%M:%S:%s')": clean folder: unpackged";
+echo $(date '+%Y-%m-%d %H:%M:%S:%s')": clean folder: build";
 rm -rf build/;
 mkdir build;
 
