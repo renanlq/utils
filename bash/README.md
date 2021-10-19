@@ -1,4 +1,4 @@
-# PowerShell Utils
+# Bash Utils
 
 ## Sumary
 * [Purpose](#purpose)
