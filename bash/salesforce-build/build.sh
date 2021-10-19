@@ -10,8 +10,8 @@ git reset --hard;
 git checkout $branch;
 git pull --force;
 
-echo $(date '+%Y-%m-%d %H:%M:%S:%s')": get commit list from baseline, see commit.txt and commitlist.txt";
-hashbaseline=$(head -n 1 commit.txt);
+echo $(date '+%Y-%m-%d %H:%M:%S:%s')": get commit list from baseline, see baseline.txt and commitlist.txt";
+hashbaseline=$(head -n 1 baseline.txt);
 rm commitlist.txt;
 git rev-list $hashbaseline..HEAD --oneline > commitlist.txt;
 
