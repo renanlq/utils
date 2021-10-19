@@ -14,6 +14,10 @@ Generate build "package" from a list of commits in git log.
 2. Run `bash build.sh`;
 3. Build script will create "unpackaged" folder with a new SFDX project structure with commited files inside it.
 
+## Results
+At the end you will recieve a path with all files that were inside each commit since you baseline configured: 
+![image](https://user-images.githubusercontent.com/15347353/137984457-d3f31da5-8adb-4f0d-9c90-5f3275177a83.png)
+
 Files managed: 
 1. commit.txt: Hash that could be your baseline;
 2. commitedfiles.txt: List of updated files inside each hash listed in 'commitlist.txt';
