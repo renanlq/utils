@@ -1,0 +1,6 @@
+.vscode/
+
+build/unpackged
+build/commitedfiles.txt
+build/commit.txt
+build/commitList.txt
