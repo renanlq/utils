@@ -1,4 +1,4 @@
-# Salesforce build package from git
+# Salesforce build package from git log
 
 ## Sumary
 * [Purpose](#purpose)
