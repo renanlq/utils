@@ -2,8 +2,8 @@
 branch="master"
 
 echo $(date '+%Y-%m-%d %H:%M:%S:%s')": clean folder: unpackged";
-rm -rf unpackged/;
-mkdir unpackged;
+rm -rf build/;
+mkdir build;
 
 echo $(date '+%Y-%m-%d %H:%M:%S:%s')": update branch $branch";
 git reset --hard;
@@ -22,13 +22,13 @@ do
 done < commitlist.txt;
 
 echo $(date '+%Y-%m-%d %H:%M:%S:%s')": create dummy sfdx project";
-sfdx force:project:create -n unpackged --template standard
+sfdx force:project:create -n build --template standard
 
-echo $(date '+%Y-%m-%d %H:%M:%S:%s')": copy files to unpackged folder";
+echo $(date '+%Y-%m-%d %H:%M:%S:%s')": copy files to build folder";
 while read status path
 do
     if [ $status != "D" ]; then
-        mkdir -p "$(dirname "../build/unpackged/$path")";
-        cp -r "../$path" "../build/unpackged/$path";
+        mkdir -p "$(dirname "build/$path")";
+        cp -r "../$path" "build/$path";
     fi
 done < commitedfiles.txt;
