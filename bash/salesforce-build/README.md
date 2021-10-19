@@ -22,7 +22,7 @@ At the end you will recieve a path with all files that were inside each commit s
 ![image](https://user-images.githubusercontent.com/15347353/137984457-d3f31da5-8adb-4f0d-9c90-5f3275177a83.png)
 
 Files managed: 
-1. commit.txt: Hash that could be your baseline;
+1. baseline.txt: Hash that could be your baseline;
 2. commitedfiles.txt: List of updated files inside each hash listed in 'commitlist.txt';
 3. commitlist.txt: list of commit existed in log repo since hash baseline.
 
