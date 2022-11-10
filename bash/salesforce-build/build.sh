@@ -8,7 +8,7 @@ mkdir $buildpath;
 
 echo $(date '+%Y-%m-%d %H:%M:%S:%s')": update branch $branch";
 git reset --hard;
-git checkout $branch;
+git checkout $branch; # <HEAD>
 git pull --force;
 
 echo $(date '+%Y-%m-%d %H:%M:%S:%s')": get commit list from baseline, see baseline.txt and commitlist.txt";
