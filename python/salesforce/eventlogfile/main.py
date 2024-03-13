@@ -10,7 +10,7 @@ from simple_salesforce import Salesforce
 sf = Salesforce(
     consumer_key=sf_consumerKey, 
     consumer_secret=sf_consumerSecret, 
-    domain='bancobv--devcoe.sandbox.my'
+    domain=sf_domain
     )
 
 data = sf.query_all_iter("SELECT Id, CreatedDate, EventType, LogDate, LogFileLength, LogFile FROM EventLogFile WHERE LogDate = 2024-03-11T00:00:00.000+0000 AND Interval = 'Daily' ORDER BY EventType")
