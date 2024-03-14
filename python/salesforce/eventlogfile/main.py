@@ -10,6 +10,7 @@ print(datetime.now())
 sfDomain = os.environ['SF_DOMAIN']
 sfConsumerKey = os.environ['SF_CONSUMER_KEY']
 sfConsumerSecret = os.environ['SF_CONSUMER_SECRET']
+sfApiVersion = os.environ['SF_API_VERSION']
 
 sfAuthUrl = sfDomain + '/services/oauth2/token'
 httpResponse = requests.post(sfAuthUrl, data = {
@@ -32,7 +33,7 @@ sfAuthHeaders = {
     'Accept-Encoding': 'gzip'
     }
 
-sfAuthUrl = sfInstanceUrl + '/services/data/v60.0/'
+sfAuthUrl = sfInstanceUrl + '/services/data/v'+sfApiVersion+'/'
 
 queryUrl =  sfAuthUrl + 'query/'
 parameters = {'q': "SELECT Id, LogFile, LogFileContentType FROM EventLogFile WHERE LogDate = 2024-03-11T00:00:00.000+0000 AND Interval = 'Daily'" }     
