@@ -1,4 +1,5 @@
 # Python
+__pycache__
 python/**/Lib/*
 python/**/Scripts/*
 pyvenv.cfg

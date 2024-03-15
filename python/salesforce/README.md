@@ -2,7 +2,7 @@
 
 ## Execution
 ```
-python main.py > .\logs\execution.log
+python main.py
 ```
 
 ## Paths
